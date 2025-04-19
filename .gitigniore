@@ -1,0 +1,21 @@
+# Ignore all files in the downloads directory
+downloads/
+
+# Ignore specific file types
+*.zip
+*.exe
+*.tar.gz
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore node_modules (if using Node.js)
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+Téléchargements
+Téléchargements.pub
