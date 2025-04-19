@@ -1,0 +1,138 @@
+header > div {
+  text-align: center;
+  color: rgb(31, 27, 27);
+  font-family: "Times New Roman", Times, serif;
+}
+header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15vh;
+  flex-wrap: wrap;
+  border: black 5px solid;
+  padding: 2px;
+  gap: 6px;
+}
+.insedeButton {
+  display: flex;
+  margin: 3px;
+  gap: 2px;
+}
+.insedeButton button {
+  color: aliceblue;
+  border: none;
+  background-color: black;
+  border-radius: 5%;
+  text-align: center;
+}
+.block {
+  border: 2px solid black;
+  text-align: center;
+  max-width: min-content;
+  max-height: min-content;
+}
+.blockAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add {
+  border-radius: 100%;
+  background-color: #ff7e5f;
+  border: black 2px solid;
+  padding: 20px;
+  cursor: pointer;
+}
+.add:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in-out;
+}
+.form-check {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* From Uiverse.io by SelfMadeSystem */
+/* The switch - the box around the slider */
+.switch {
+  --a: 0.5s ease-out;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  height: 0.6em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0 0.5em #aaa;
+  aspect-ratio: 212.4992/84.4688;
+  background-color: #feb47b;
+  margin-bottom: 10px;
+}
+
+/* Hide default HTML checkbox */
+.check {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch svg {
+  height: 100%;
+}
+
+.switch svg path {
+  color: #fff;
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 136 224;
+  transition: all var(--a), 0s transform;
+  transform-origin: center;
+}
+
+.check:checked ~ .switch svg path {
+  stroke-dashoffset: 180;
+  transform: scaleY(-1);
+}
+
+.valide {
+  background: linear-gradient(to right, #7ed60b, #77d37a);
+  color: #fff !important;
+}
+.invalide {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 10vh;
+    padding: 5px;
+  }
+
+  .block {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .insedeButton {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .add {
+    padding: 15px;
+  }
+
+  .switch {
+    width: 100%;
+    height: 1em;
+  }
+}
